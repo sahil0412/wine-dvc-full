@@ -68,3 +68,7 @@ build your own package commands-
 ```bash
 python setup.py sdist bdist_wheel
 ```
+to check the metrics params
+```
+dvc metrics show
+```
