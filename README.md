@@ -72,4 +72,4 @@ to check the metrics params
 ```
 dvc metrics show
 dvc metrics diff
-```
+``` 
