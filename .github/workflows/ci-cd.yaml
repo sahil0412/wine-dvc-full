@@ -37,7 +37,8 @@ jobs:
     if: github.ref == 'refs/heads/main' && github.event_name == 'push'
     steps: 
       - name: Deploy to production
-        uses: sahil0412/render-deploy-action@v0.0.8
+        uses: johnbeynon/render-deploy-action@v0.0.8
+        actions/checkout@v2
         with:
           service-id: ${{ secrets.SERVICE_ID }} # Can be found as part of the Deploy Hook
           api-key: ${{ secrets.RENDER_TOKEN }} # Create your API key in Render Dashboard > Account Settings
